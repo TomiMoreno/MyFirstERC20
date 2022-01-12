@@ -1,0 +1,11 @@
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity ^0.8.0;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+contract MafiaToken is ERC20{
+    constructor(uint256 totalSupply) ERC20("MafiaToken", "M4F1A"){
+			_mint(msg.sender, totalSupply);
+    }
+}
